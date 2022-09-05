@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //Khoi tao doi tuong theo 2 cach su dung ES5 gom cac:
+  // Thuộc tính: tên, tuổi, giới tính
+  // Phương thức: đi,đứng,nói.
+  // function di(){
+  //     console.log('đi lại 10 lần')
+  // }
+  // let NG = Object();
+  // NG.name = 'Thao'
+  // NG.age = '30'
+  // NG.gender = 'Nam'
+  // NG.di = di;
+  // NG.di();
+  //
+  //
+  //   //
+  // let ng = {
+  //     name:'Tuan',
+  //     age: '28',
+  //     gender: 'Nam'
+  // }
+  // ng.name = 'Hai';
+  // ng.age = '27';
+  // ng.gender= 'Nam';
+  // console.log()
+  // ES6//
+  class nguoi{
+      name;
+      age;
+      gender;
+      constructor(_name,_age,_gender) {
+          this.name = _name;
+          this.age = _age;
+          this.gender = _gender
+      }
+      di(){
+          console.log('Đi 3 lần')
+      }
+      dung() {
+          console.log('Đứng lại')
+      }
+      noi(){
+          console.log('hello')
+      }
+  }
+  let nguoi1 = new nguoi('Thao','20','Nam')
+  console.log(nguoi1)
+  nguoi1.di()
+  nguoi1.dung()
+  nguoi1.noi()
+</script>
+</body>
+</html>

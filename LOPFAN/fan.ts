@@ -6,7 +6,7 @@ class Fan {
     private _on:boolean ;
     private _radius: number ;
     private _color: string ;
-    constructor(slow:number,medium:number,fast:number,_speed:number,_radius:number,_color:string) {
+    constructor(slow:number,_speed:number,_radius:number,_color:string) {
         this._slow = slow;
         this._speed = _speed;
         this._radius = _radius;
@@ -21,3 +21,7 @@ class Fan {
         }
     }
 }
+let Fan1 = new Fan(1,5,10,'blue')
+console.log(Fan1.toString())
+let Fan2 = new Fan(1,10, 20,'blue')
+console.log(Fan2.toString())

@@ -39,7 +39,7 @@ class QuadraticEquation {
     }
     get(){
         if (this.getDiscriminant()==0){
-            console.log('Phương trình có nghiệm là :'+ this.getRoot())
+            console.log('Phương trình có nghiệm kép là :'+ this.getRoot())
         }else if(this.getDiscriminant()<0){
             console.log('Phương trình vô nghiệm');
         }else {
